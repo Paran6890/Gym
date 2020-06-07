@@ -1,3 +1,31 @@
+// ============stiky bar===============
+$(window).scroll(function(){
+  var scrollamount = $(window).scrollTop()
+
+  if(scrollamount > 640){
+    $(".menu").addClass("fixed")
+  }
+ 
+    else{
+    $(".menu").removeClass("fixed")
+    }
+
+    if(scrollamount > 650){
+      $(".btop").fadeIn();
+    }
+    else{
+      $(".btop").fadeOut();
+    }
+})
+
+$(".btop").click(function(){
+  $("html,body").animate({
+    scrollTop:0
+  },1000)
+})
+
+
+
 //================slick slider======== 
 $('#banner-part').slick({
   dots: true,
@@ -6,7 +34,8 @@ $('#banner-part').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  autoplay: false,
+  autoplay: true,
+  autoplaySpeed: 5000,
 });
 
 // ====================venobox========

@@ -1,6 +1,5 @@
 html{
     scroll-behavior: smooth;
-    s
 }
 * {
     margin: 0;
@@ -72,14 +71,14 @@ h6 {
 /* ==========================
     navber css start
 =============================== */
+
 nav {
     background: rgba(53, 53, 53, .25);
     padding: 0 !important;
-    margin-top: 50px;
     width: 100%;
     position: absolute !important;
     z-index: 9999;
-    top: -20px;
+    top: 30px;
     left: 0;
 }
 
@@ -98,7 +97,7 @@ nav .navbar-brand {
 nav .navbar-brand img {
     transform: skewX(35deg);
 }
-
+  
 nav ul li a {
     display: inline-block;
     font-family: 'Oswald', sans-serif;
@@ -133,7 +132,26 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+.fixed{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    background: #8f8989;
 
+}
+.fixed .navbar-brand {
+    padding: 0 !important;
+    position: static;
+    width: 200px;
+    line-height: 0 !important;
+    text-align: center;
+    background: #313131;
+    transform: skewX(-35deg);
+    border: 0;
+}
+.fixed .navbar-brand{
+    height: 60px;
+}
 /* ==========================
     navber css end
 =============================== */
@@ -149,6 +167,16 @@ nav ul li a:hover::after {
 
 }
 
+#banner-part .banner-img {
+    background: url(../images/banner-img.png) no-repeat center;
+    background-size: cover;
+
+}
+#banner-part .banner2 {
+    background: url(../images/banner2.png) no-repeat center;
+    background-size: cover;
+
+}
 #banner-part .banner .overlay {
     height: 100%;
     width: 100%;
@@ -212,7 +240,7 @@ nav ul li a:hover::after {
     transform: translatex(40%);
     left: 4px;
     width: 2px;
-    height: 200px;
+    height: 235px;
     background: #e23e38;
     content: "";
 }
@@ -223,7 +251,7 @@ nav ul li a:hover::after {
     transform: translatex(40%);
     right: 0;
     width: 2px;
-    height: 200px;
+    height: 235px;
     background: #e23e38;
     content: "";
 }
@@ -242,7 +270,7 @@ nav ul li a:hover::after {
 
 #banner-part .banner .overlay p::after {
     position: absolute;
-    bottom: -45%;
+    bottom: -114%;
     transform: translateY(45%);
     left: -45px;
     width: 74px;
@@ -253,7 +281,7 @@ nav ul li a:hover::after {
 
 #banner-part .banner .overlay p::before {
     position: absolute;
-    bottom: -42%;
+    bottom: -112%;
     transform: translateY(42%);
     right: -50px;
     width: 45px;
@@ -539,6 +567,7 @@ nav ul li a:hover::after {
     visibility: hidden;
     opacity: 0;
     transition: .4s;
+    padding-bottom: 15px;
 }
 
 #team-part .team .members:hover .img .overlay {
@@ -722,6 +751,7 @@ nav ul li a:hover::after {
     background: #f1f1f1;
     padding-bottom: 5px;
     margin-bottom: 0;
+    transition: .4s;
 }
 
 #membership-part .item ul li {
@@ -750,11 +780,17 @@ nav ul li a:hover::after {
     background: #e23e38;
     color: #fff;
 }
-
+#membership-part .item:hover ul{
+    -webkit-box-shadow: inset 0px -1px 5px 0px rgba(224,29,29,1);
+-moz-box-shadow: inset 0px -1px 5px 0px rgba(224,29,29,1);
+box-shadow: inset 0px -1px 5px 0px rgba(224,29,29,1);
+Copy Text
+}
 
 #membership-part .item:hover a {
     background: #e23e38;
     color: #fff;
+    
 }
 
 
@@ -943,6 +979,7 @@ nav ul li a:hover::after {
 #class-part .colorful-tab-content ul li:hover{
     background: #e23e38;
     color: #f1f1f1;
+    transform: scale(1.06);
 }
 
 /* ==========================
@@ -1143,13 +1180,11 @@ nav ul li a:hover::after {
 /* ================================
               goto top button  start
 ============================== */
-.gototop{
+.btop{
+    display: none;
     position: fixed;
     background: #1da0f2;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
+   padding: 20px;
     bottom: 50px;
     right: 50px;
     color: #dddddd;
