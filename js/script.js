@@ -73,7 +73,7 @@ $('.sliders').slick({
   arrows: true,
   prevArrow: '<i class="fa fa-angle-left prev" aria-hidden="true"></i>',
   nextArrow: '<i class="fa fa-angle-right next" aria-hidden="true"></i>',
-
+  autoplay: true,
 });
 
 
@@ -82,3 +82,12 @@ $('.sliders').slick({
 $("#colorful").colorfulTab();    
 
 
+
+// ===========popup===========
+$(".button").click(function(){
+  $(".po").slideDown();
+})
+
+$(".icon").click(function(){
+  $(".po").slideUp();
+})
