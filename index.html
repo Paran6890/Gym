@@ -15,9 +15,10 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/colorfulTab.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".menu">
   <!-- ==========================
           navbar start
   =============================== -->
@@ -29,13 +30,13 @@
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
   
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#banner-part">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link  active" href="#banner-part">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about-part">about</a>
@@ -255,8 +256,8 @@
         <img src="images/title.png" alt="icon img">
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
+        <div class="row teams">
+          <div class="col-lg-3 col-md-6">
             <div class="members wow fadeInUp" data-wow-delay=".5s"">
               <div class="img">
                 <img src="images/team-img.png" alt="teamimg">
@@ -275,7 +276,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <div class="members wow fadeInUp" data-wow-delay="1s"">
               <div class="img">
                 <img src="images/team-img2.png" alt="teamimg">
@@ -294,7 +295,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <div class="members wow fadeInUp" data-wow-delay="1.5s"">
               <div class="img">
                 <img src="images/team-img3.png" alt="teamimg">
@@ -313,7 +314,26 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="members wow fadeInUp" data-wow-delay="2s"">
+              <div class="img">
+                <img src="images/team-img4.png" alt="teamimg">
+                <div class="overlay">
+                  <div class="icons">
+                    <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                    <a href="#"></a> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
+                    <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <h2>mehedi hasan</h2>
+                <h3> male trainer</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 1500s.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
             <div class="members wow fadeInUp" data-wow-delay="2s"">
               <div class="img">
                 <img src="images/team-img4.png" alt="teamimg">
@@ -539,34 +559,28 @@
       <div class="overlay">
         <div class="container">
           <div class="row">
-            <div class="col">
+            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-3">
               <div class="text">
                 <h2 class="counter">261</h2>
                 <p>cup of tea</p>
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-3">
               <div class="text mar1">
                 <h2 class="counter">518</h2>
                 <p>award win</p>
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-3">
               <div class="text mar2">
                 <h2 class="counter">999</h2>
                 <p>happy clients</p>
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-3">
               <div class="text mar3">
                 <h2 class="counter">369</h2>
                 <p>course complete</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="text mar">
-                <h2 class="counter">209</h2>
-                <p>partner gym</p>
               </div>
             </div>
           </div>
@@ -587,71 +601,17 @@
       <img src="images/title.png" alt="icon img">
     </div>
     <div class="container">
-      <div class="colorful-tab-wrapper wow fadeInUp" data-wow-delay="1s"" id="colorful">
-        <ul class="colorful-tab-menu">
-          <li class="colorful-tab-menu-item active" tab-color="#00A566"><a href="#clr-0">Munday</a></li>
-          <li class="colorful-tab-menu-item" tab-color="#8021D3"><a href="#clr-1"> Tuesday</a></li>
-          <li class="colorful-tab-menu-item" tab-color="#C9003C"><a href="#clr-2"> Wednesday</a></li>
-          <li class="colorful-tab-menu-item" tab-color="#E54400"><a href="#clr-3">Thursday</a></li>
-          <li class="colorful-tab-menu-item" tab-color="#445370"><a href="#clr-4">Friday</a></li>
-          <li class="colorful-tab-menu-item" tab-color="#445370"><a href="#clr-5">Saturday</a></li>
-        </ul>
-        <div class="colorful-tab-container wow fadeInUp" data-wow-delay="2s"">  
-          <div class="colorful-tab-content active" id="clr-0">  
-          <ul>
-            <li>
-              <p>yoga</p>
-              <img src="images/cls1.png" alt="cls img">
-              <p>9.00 a.m. - 11.00 a.m.</p>
-            </li>
-            <li>
-              <p>Skipping</p>
-              <img src="images/cls2.png" alt="cls img">
-              <p>11.00 a.m. - 1.00 p.m.</p>
-            </li>
-            <li>
-              <p>Cycling</p>
-              <img src="images/cls3.png" alt="cls img">
-              <p>1.00 a.m. - 3.00 p.m.</p>
-            </li>
-            <li>
-              <p>Boxing</p>
-              <img src="images/cls4.png" alt="cls img">
-              <p>3.00 a.m. - 5.00 p.m.</p>
-            </li>
-            <li>
-              <p>Back Relief</p>
-              <img src="images/cls5.png" alt="cls img">
-              <p>5.00 a.m. - 7.00 p.m.</p>
-            </li>
-            <li>
-              <p>Chin Up</p>
-              <img src="images/cls6.png" alt="cls img">
-              <p>7.00 p.m. - 9.00 p.m.</p>
-            </li>
-            <li>
-              <p>Weight Lifting</p>
-              <img src="images/cls9.png" alt="cls img">
-              <p>9.00 p.m. - 11.00 p.m.</p>
-            </li>
-            <li>
-              <p>Weight Losing</p>
-              <img src="images/cls7.png" alt="cls img">
-              <p>11.00 p.m. - 1.00 a.m.</p>
-            </li>
-            <li>
-              <p>Free Hand</p>
-              <img src="images/cls8.png" alt="cls img">
-              <p>1.00 a.m. - 3.00 a.m.</p>
-            </li>
-            <li>
-              <p>dum bell</p>
-              <img src="images/cls10.png" alt="cls img">
-              <p>3.00 a.m. - 5.00 a.m.</p>
-            </li>
+        <div class="colorful-tab-wrapper wow fadeInUp" data-wow-delay="1s"" id="colorful">
+          <ul class="colorful-tab-menu">
+            <li class="colorful-tab-menu-item active" tab-color="#00A566"><a href="#clr-0">Munday</a></li>
+            <li class="colorful-tab-menu-item" tab-color="#8021D3"><a href="#clr-1"> Tuesday</a></li>
+            <li class="colorful-tab-menu-item" tab-color="#C9003C"><a href="#clr-2"> Wednesday</a></li>
+            <li class="colorful-tab-menu-item" tab-color="#E54400"><a href="#clr-3">Thursday</a></li>
+            <li class="colorful-tab-menu-item" tab-color="#445370"><a href="#clr-4">Friday</a></li>
+            <li class="colorful-tab-menu-item" tab-color="#445370"><a href="#clr-5">Saturday</a></li>
           </ul>
-          </div>
-          <div class="colorful-tab-content" id="clr-1"> 
+          <div class="colorful-tab-container wow fadeInUp" data-wow-delay="2s"">  
+            <div class="colorful-tab-content active" id="clr-0">  
             <ul>
               <li>
                 <p>yoga</p>
@@ -704,226 +664,280 @@
                 <p>3.00 a.m. - 5.00 a.m.</p>
               </li>
             </ul>
-          </div>
-          <div class="colorful-tab-content" id="clr-2"> 
-            <ul>
-              <li>
-                <p>yoga</p>
-                <img src="images/cls1.png" alt="cls img">
-                <p>9.00 a.m. - 11.00 a.m.</p>
-              </li>
-              <li>
-                <p>Skipping</p>
-                <img src="images/cls2.png" alt="cls img">
-                <p>11.00 a.m. - 1.00 p.m.</p>
-              </li>
-              <li>
-                <p>Cycling</p>
-                <img src="images/cls3.png" alt="cls img">
-                <p>1.00 a.m. - 3.00 p.m.</p>
-              </li>
-              <li>
-                <p>Boxing</p>
-                <img src="images/cls4.png" alt="cls img">
-                <p>3.00 a.m. - 5.00 p.m.</p>
-              </li>
-              <li>
-                <p>Back Relief</p>
-                <img src="images/cls5.png" alt="cls img">
-                <p>5.00 a.m. - 7.00 p.m.</p>
-              </li>
-              <li>
-                <p>Chin Up</p>
-                <img src="images/cls6.png" alt="cls img">
-                <p>7.00 p.m. - 9.00 p.m.</p>
-              </li>
-              <li>
-                <p>Weight Lifting</p>
-                <img src="images/cls9.png" alt="cls img">
-                <p>9.00 p.m. - 11.00 p.m.</p>
-              </li>
-              <li>
-                <p>Weight Losing</p>
-                <img src="images/cls7.png" alt="cls img">
-                <p>11.00 p.m. - 1.00 a.m.</p>
-              </li>
-              <li>
-                <p>Free Hand</p>
-                <img src="images/cls8.png" alt="cls img">
-                <p>1.00 a.m. - 3.00 a.m.</p>
-              </li>
-              <li>
-                <p>dum bell</p>
-                <img src="images/cls10.png" alt="cls img">
-                <p>3.00 a.m. - 5.00 a.m.</p>
-              </li>
-            </ul>
-          </div>
-          <div class="colorful-tab-content" id="clr-3"> 
-            <ul>
-              <li>
-                <p>yoga</p>
-                <img src="images/cls1.png" alt="cls img">
-                <p>9.00 a.m. - 11.00 a.m.</p>
-              </li>
-              <li>
-                <p>Skipping</p>
-                <img src="images/cls2.png" alt="cls img">
-                <p>11.00 a.m. - 1.00 p.m.</p>
-              </li>
-              <li>
-                <p>Cycling</p>
-                <img src="images/cls3.png" alt="cls img">
-                <p>1.00 a.m. - 3.00 p.m.</p>
-              </li>
-              <li>
-                <p>Boxing</p>
-                <img src="images/cls4.png" alt="cls img">
-                <p>3.00 a.m. - 5.00 p.m.</p>
-              </li>
-              <li>
-                <p>Back Relief</p>
-                <img src="images/cls5.png" alt="cls img">
-                <p>5.00 a.m. - 7.00 p.m.</p>
-              </li>
-              <li>
-                <p>Chin Up</p>
-                <img src="images/cls6.png" alt="cls img">
-                <p>7.00 p.m. - 9.00 p.m.</p>
-              </li>
-              <li>
-                <p>Weight Lifting</p>
-                <img src="images/cls9.png" alt="cls img">
-                <p>9.00 p.m. - 11.00 p.m.</p>
-              </li>
-              <li>
-                <p>Weight Losing</p>
-                <img src="images/cls7.png" alt="cls img">
-                <p>11.00 p.m. - 1.00 a.m.</p>
-              </li>
-              <li>
-                <p>Free Hand</p>
-                <img src="images/cls8.png" alt="cls img">
-                <p>1.00 a.m. - 3.00 a.m.</p>
-              </li>
-              <li>
-                <p>dum bell</p>
-                <img src="images/cls10.png" alt="cls img">
-                <p>3.00 a.m. - 5.00 a.m.</p>
-              </li>
-            </ul>
-          </div>
-          <div class="colorful-tab-content" id="clr-4"> 
-            <ul>
-              <li>
-                <p>yoga</p>
-                <img src="images/cls1.png" alt="cls img">
-                <p>9.00 a.m. - 11.00 a.m.</p>
-              </li>
-              <li>
-                <p>Skipping</p>
-                <img src="images/cls2.png" alt="cls img">
-                <p>11.00 a.m. - 1.00 p.m.</p>
-              </li>
-              <li>
-                <p>Cycling</p>
-                <img src="images/cls3.png" alt="cls img">
-                <p>1.00 a.m. - 3.00 p.m.</p>
-              </li>
-              <li>
-                <p>Boxing</p>
-                <img src="images/cls4.png" alt="cls img">
-                <p>3.00 a.m. - 5.00 p.m.</p>
-              </li>
-              <li>
-                <p>Back Relief</p>
-                <img src="images/cls5.png" alt="cls img">
-                <p>5.00 a.m. - 7.00 p.m.</p>
-              </li>
-              <li>
-                <p>Chin Up</p>
-                <img src="images/cls6.png" alt="cls img">
-                <p>7.00 p.m. - 9.00 p.m.</p>
-              </li>
-              <li>
-                <p>Weight Lifting</p>
-                <img src="images/cls9.png" alt="cls img">
-                <p>9.00 p.m. - 11.00 p.m.</p>
-              </li>
-              <li>
-                <p>Weight Losing</p>
-                <img src="images/cls7.png" alt="cls img">
-                <p>11.00 p.m. - 1.00 a.m.</p>
-              </li>
-              <li>
-                <p>Free Hand</p>
-                <img src="images/cls8.png" alt="cls img">
-                <p>1.00 a.m. - 3.00 a.m.</p>
-              </li>
-              <li>
-                <p>dum bell</p>
-                <img src="images/cls10.png" alt="cls img">
-                <p>3.00 a.m. - 5.00 a.m.</p>
-              </li>
-            </ul>
-          </div>
-          <div class="colorful-tab-content" id="clr-5"> 
-            <ul>
-              <li>
-                <p>yoga</p>
-                <img src="images/cls1.png" alt="cls img">
-                <p>9.00 a.m. - 11.00 a.m.</p>
-              </li>
-              <li>
-                <p>Skipping</p>
-                <img src="images/cls2.png" alt="cls img">
-                <p>11.00 a.m. - 1.00 p.m.</p>
-              </li>
-              <li>
-                <p>Cycling</p>
-                <img src="images/cls3.png" alt="cls img">
-                <p>1.00 a.m. - 3.00 p.m.</p>
-              </li>
-              <li>
-                <p>Boxing</p>
-                <img src="images/cls4.png" alt="cls img">
-                <p>3.00 a.m. - 5.00 p.m.</p>
-              </li>
-              <li>
-                <p>Back Relief</p>
-                <img src="images/cls5.png" alt="cls img">
-                <p>5.00 a.m. - 7.00 p.m.</p>
-              </li>
-              <li>
-                <p>Chin Up</p>
-                <img src="images/cls6.png" alt="cls img">
-                <p>7.00 p.m. - 9.00 p.m.</p>
-              </li>
-              <li>
-                <p>Weight Lifting</p>
-                <img src="images/cls9.png" alt="cls img">
-                <p>9.00 p.m. - 11.00 p.m.</p>
-              </li>
-              <li>
-                <p>Weight Losing</p>
-                <img src="images/cls7.png" alt="cls img">
-                <p>11.00 p.m. - 1.00 a.m.</p>
-              </li>
-              <li>
-                <p>Free Hand</p>
-                <img src="images/cls8.png" alt="cls img">
-                <p>1.00 a.m. - 3.00 a.m.</p>
-              </li>
-              <li>
-                <p>dum bell</p>
-                <img src="images/cls10.png" alt="cls img">
-                <p>3.00 a.m. - 5.00 a.m.</p>
-              </li>
-            </ul>
+            </div>
+            <div class="colorful-tab-content" id="clr-1"> 
+              <ul>
+                <li>
+                  <p>yoga</p>
+                  <img src="images/cls1.png" alt="cls img">
+                  <p>9.00 a.m. - 11.00 a.m.</p>
+                </li>
+                <li>
+                  <p>Skipping</p>
+                  <img src="images/cls2.png" alt="cls img">
+                  <p>11.00 a.m. - 1.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Cycling</p>
+                  <img src="images/cls3.png" alt="cls img">
+                  <p>1.00 a.m. - 3.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Boxing</p>
+                  <img src="images/cls4.png" alt="cls img">
+                  <p>3.00 a.m. - 5.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Back Relief</p>
+                  <img src="images/cls5.png" alt="cls img">
+                  <p>5.00 a.m. - 7.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Chin Up</p>
+                  <img src="images/cls6.png" alt="cls img">
+                  <p>7.00 p.m. - 9.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Weight Lifting</p>
+                  <img src="images/cls9.png" alt="cls img">
+                  <p>9.00 p.m. - 11.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Weight Losing</p>
+                  <img src="images/cls7.png" alt="cls img">
+                  <p>11.00 p.m. - 1.00 a.m.</p>
+                </li>
+                <li>
+                  <p>Free Hand</p>
+                  <img src="images/cls8.png" alt="cls img">
+                  <p>1.00 a.m. - 3.00 a.m.</p>
+                </li>
+                <li>
+                  <p>dum bell</p>
+                  <img src="images/cls10.png" alt="cls img">
+                  <p>3.00 a.m. - 5.00 a.m.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="colorful-tab-content" id="clr-2"> 
+              <ul>
+                <li>
+                  <p>yoga</p>
+                  <img src="images/cls1.png" alt="cls img">
+                  <p>9.00 a.m. - 11.00 a.m.</p>
+                </li>
+                <li>
+                  <p>Skipping</p>
+                  <img src="images/cls2.png" alt="cls img">
+                  <p>11.00 a.m. - 1.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Cycling</p>
+                  <img src="images/cls3.png" alt="cls img">
+                  <p>1.00 a.m. - 3.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Boxing</p>
+                  <img src="images/cls4.png" alt="cls img">
+                  <p>3.00 a.m. - 5.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Back Relief</p>
+                  <img src="images/cls5.png" alt="cls img">
+                  <p>5.00 a.m. - 7.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Chin Up</p>
+                  <img src="images/cls6.png" alt="cls img">
+                  <p>7.00 p.m. - 9.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Weight Lifting</p>
+                  <img src="images/cls9.png" alt="cls img">
+                  <p>9.00 p.m. - 11.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Weight Losing</p>
+                  <img src="images/cls7.png" alt="cls img">
+                  <p>11.00 p.m. - 1.00 a.m.</p>
+                </li>
+                <li>
+                  <p>Free Hand</p>
+                  <img src="images/cls8.png" alt="cls img">
+                  <p>1.00 a.m. - 3.00 a.m.</p>
+                </li>
+                <li>
+                  <p>dum bell</p>
+                  <img src="images/cls10.png" alt="cls img">
+                  <p>3.00 a.m. - 5.00 a.m.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="colorful-tab-content" id="clr-3"> 
+              <ul>
+                <li>
+                  <p>yoga</p>
+                  <img src="images/cls1.png" alt="cls img">
+                  <p>9.00 a.m. - 11.00 a.m.</p>
+                </li>
+                <li>
+                  <p>Skipping</p>
+                  <img src="images/cls2.png" alt="cls img">
+                  <p>11.00 a.m. - 1.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Cycling</p>
+                  <img src="images/cls3.png" alt="cls img">
+                  <p>1.00 a.m. - 3.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Boxing</p>
+                  <img src="images/cls4.png" alt="cls img">
+                  <p>3.00 a.m. - 5.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Back Relief</p>
+                  <img src="images/cls5.png" alt="cls img">
+                  <p>5.00 a.m. - 7.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Chin Up</p>
+                  <img src="images/cls6.png" alt="cls img">
+                  <p>7.00 p.m. - 9.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Weight Lifting</p>
+                  <img src="images/cls9.png" alt="cls img">
+                  <p>9.00 p.m. - 11.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Weight Losing</p>
+                  <img src="images/cls7.png" alt="cls img">
+                  <p>11.00 p.m. - 1.00 a.m.</p>
+                </li>
+                <li>
+                  <p>Free Hand</p>
+                  <img src="images/cls8.png" alt="cls img">
+                  <p>1.00 a.m. - 3.00 a.m.</p>
+                </li>
+                <li>
+                  <p>dum bell</p>
+                  <img src="images/cls10.png" alt="cls img">
+                  <p>3.00 a.m. - 5.00 a.m.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="colorful-tab-content" id="clr-4"> 
+              <ul>
+                <li>
+                  <p>yoga</p>
+                  <img src="images/cls1.png" alt="cls img">
+                  <p>9.00 a.m. - 11.00 a.m.</p>
+                </li>
+                <li>
+                  <p>Skipping</p>
+                  <img src="images/cls2.png" alt="cls img">
+                  <p>11.00 a.m. - 1.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Cycling</p>
+                  <img src="images/cls3.png" alt="cls img">
+                  <p>1.00 a.m. - 3.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Boxing</p>
+                  <img src="images/cls4.png" alt="cls img">
+                  <p>3.00 a.m. - 5.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Back Relief</p>
+                  <img src="images/cls5.png" alt="cls img">
+                  <p>5.00 a.m. - 7.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Chin Up</p>
+                  <img src="images/cls6.png" alt="cls img">
+                  <p>7.00 p.m. - 9.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Weight Lifting</p>
+                  <img src="images/cls9.png" alt="cls img">
+                  <p>9.00 p.m. - 11.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Weight Losing</p>
+                  <img src="images/cls7.png" alt="cls img">
+                  <p>11.00 p.m. - 1.00 a.m.</p>
+                </li>
+                <li>
+                  <p>Free Hand</p>
+                  <img src="images/cls8.png" alt="cls img">
+                  <p>1.00 a.m. - 3.00 a.m.</p>
+                </li>
+                <li>
+                  <p>dum bell</p>
+                  <img src="images/cls10.png" alt="cls img">
+                  <p>3.00 a.m. - 5.00 a.m.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="colorful-tab-content" id="clr-5"> 
+              <ul>
+                <li>
+                  <p>yoga</p>
+                  <img src="images/cls1.png" alt="cls img">
+                  <p>9.00 a.m. - 11.00 a.m.</p>
+                </li>
+                <li>
+                  <p>Skipping</p>
+                  <img src="images/cls2.png" alt="cls img">
+                  <p>11.00 a.m. - 1.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Cycling</p>
+                  <img src="images/cls3.png" alt="cls img">
+                  <p>1.00 a.m. - 3.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Boxing</p>
+                  <img src="images/cls4.png" alt="cls img">
+                  <p>3.00 a.m. - 5.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Back Relief</p>
+                  <img src="images/cls5.png" alt="cls img">
+                  <p>5.00 a.m. - 7.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Chin Up</p>
+                  <img src="images/cls6.png" alt="cls img">
+                  <p>7.00 p.m. - 9.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Weight Lifting</p>
+                  <img src="images/cls9.png" alt="cls img">
+                  <p>9.00 p.m. - 11.00 p.m.</p>
+                </li>
+                <li>
+                  <p>Weight Losing</p>
+                  <img src="images/cls7.png" alt="cls img">
+                  <p>11.00 p.m. - 1.00 a.m.</p>
+                </li>
+                <li>
+                  <p>Free Hand</p>
+                  <img src="images/cls8.png" alt="cls img">
+                  <p>1.00 a.m. - 3.00 a.m.</p>
+                </li>
+                <li>
+                  <p>dum bell</p>
+                  <img src="images/cls10.png" alt="cls img">
+                  <p>3.00 a.m. - 5.00 a.m.</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+        </div>
   </section>
 
 <!-- ==========================
@@ -998,7 +1012,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 wow fadeInUp" data-wow-delay="1s"">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1s"">
             <h3>Opening Hour</h3>
             <ul>
               <li>
@@ -1027,7 +1041,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 wow fadeInUp" data-wow-delay="2s"">
+          <div class="col-lg-3 col-md-6 wow wow fadeInUp" data-wow-delay="2s"">
             <h3>Twetter Feed</h3>
             <div class="icon">
               <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -1040,7 +1054,7 @@
                 24 July 2017 </p>
             </div>
           </div>
-          <div class="col-lg-3 wow fadeInUp" data-wow-delay="3s"">
+          <div class="col-lg-3 col-md-6 wow wow fadeInUp" data-wow-delay="3s"">
             <h3>Flickr Photos</h3>
               <div class="flikerimg">
               <img src="images/footer1.png" alt="footer img">
@@ -1057,7 +1071,7 @@
               <img src="images/footer13.png" alt="footer img">
             </div>
           </div>
-          <div class="col-lg-3 wow fadeInUp" data-wow-delay="4s"">
+          <div class="col-lg-3 col-md-6 wow wow fadeInUp" data-wow-delay="4s"">
             <h3>Contact</h3>
             <div class="icons">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -1099,7 +1113,7 @@
 <!-- ===========================
   goto top button part start
 ================================ -->
-<a class="btop" href="#"> <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+<a class="btop" href="#"> <i class="fa fa-angle-up" aria-hidden="true"></i></a>
 
 
 <!-- ===========================

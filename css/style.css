@@ -97,7 +97,13 @@ nav .navbar-brand {
 nav .navbar-brand img {
     transform: skewX(35deg);
 }
-  
+nav button i{
+    color: #fff;
+    transition: .4s;
+}
+nav button i:hover{
+    color: #e23e38;
+}
 nav ul li a {
     display: inline-block;
     font-family: 'Oswald', sans-serif;
@@ -132,13 +138,25 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+nav ul li .active {
+    background: #ffffff;
+    color: #222222;
+}
+
+
+nav ul li .active::after {
+    width: 100%;
+}
+
 .fixed{
     position: fixed !important;
-    top: 0 !important;
+    top: 0;
     left: 0 !important;
-    background: #8f8989;
+    background: rgba(0, 0, 0, .5);
+    animation: paran .4s;
 
 }
+
 .fixed .navbar-brand {
     padding: 0 !important;
     position: static;
@@ -151,6 +169,15 @@ nav ul li a:hover::after {
 }
 .fixed .navbar-brand{
     height: 60px;
+}
+@keyframes paran{
+    from{
+        top: -80px;
+    }
+
+    to{
+        top: 0;
+    }
 }
 /* ==========================
     navber css end
@@ -181,7 +208,6 @@ nav ul li a:hover::after {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, .6);
-    text-align: center;
     padding-bottom: 115px;
     padding-top: 250px;
 }
@@ -229,8 +255,8 @@ nav ul li a:hover::after {
     font-weight: bold;
     text-transform: uppercase;
     color: #e23e38;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
+    
     position: relative;
 }
 
@@ -354,7 +380,7 @@ nav ul li a:hover::after {
 =============================== */
 
 #about-part {
-    margin-top: 80px;
+    padding-top: 80px;
 
 }
 
@@ -418,7 +444,7 @@ nav ul li a:hover::after {
     gallery part css start
 =============================== */
 #gallery-part {
-    margin-top: 80px;
+    padding-top: 80px;
 
 }
 
@@ -479,7 +505,7 @@ nav ul li a:hover::after {
     team part css start
 =============================== */
 #team-part {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 #team-part .team .members .img {
@@ -596,7 +622,7 @@ nav ul li a:hover::after {
     testimonial part css start
 =============================== */
 #testimonial-part {
-    margin-top: 80px;
+    padding-top: 80px;
 
 
 }
@@ -697,7 +723,7 @@ nav ul li a:hover::after {
     membership part css start
 =============================== */
 #membership-part {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 #membership-part .item {
@@ -867,7 +893,7 @@ Copy Text
     counter part css start
 =============================== */
 #counter-part {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 #counter-part .counters {
@@ -902,20 +928,19 @@ Copy Text
 }
 
 #counter-part .counters .overlay .mar1 {
-    margin-left: 50px;
+    margin-right: 60px;
+    text-align: center;
 }
 
 #counter-part .counters .overlay .mar2 {
-    margin-left: 70px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 #counter-part .counters .overlay .mar3 {
-    margin-left: 90px;
-}
-
-#counter-part .counters .overlay .mar {
     text-align: right;
 }
+
 
 /* ==========================
     counter part css end
@@ -925,7 +950,7 @@ Copy Text
     class part css start
 =============================== */
 #class-part{
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 
@@ -959,7 +984,7 @@ Copy Text
 }
 #class-part .colorful-tab-content ul li{
     text-align: center;
-    width: 19.6%;
+    width: 19.5%;
     background: #f1f1f1;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
@@ -990,17 +1015,17 @@ Copy Text
     slider part css start
 =============================== */
 #slider-part {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 #slider-part img {
-    margin-left: 30px;
+    margin-left: 10px;
 
 }
 
-#slider-part img:last-child{
+/* #slider-part img:last-child{
     margin-left: 0;
-}
+} */
 
 #slider-part .prev {
     position: absolute;
@@ -1145,7 +1170,7 @@ Copy Text
     footer part css start
 =============================== */
 #footer-part{
-    margin-top: 80px;
+    padding-top: 80px;
     background: url(../images/footer.png) no-repeat center;
     background-size: cover;
 }
@@ -1282,8 +1307,8 @@ Copy Text
 .btop{
     display: none;
     position: fixed;
-    background: #1da0f2;
-   padding: 20px;
+    background: #e21111;
+   padding: 5px 10px;
     bottom: 50px;
     right: 50px;
     color: #dddddd;
